@@ -4,7 +4,11 @@ import os
 class kwwwis(object):
     @cherrypy.expose
     def index(self):
-        return "kwwwis!!!!"
+        file = open("./public/kwwwis.html", 'r')
+        text = file.read()
+        return (text)
+
+
 
 
 if __name__ == '__main__':
